@@ -1,0 +1,5 @@
+add_executable(fooinfo fooinfo.c)
+include(ConfigureHeaderFile)
+ConfigureHeaderFile("fooconfig.h")
+install(TARGETS fooinfo DESTINATION /bin)
+install(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/foostart DESTINATION /bin)

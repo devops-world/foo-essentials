@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e
+echo "@PROJECT_NAME@ postinst" >> /tmp/foo.log
